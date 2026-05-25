@@ -1,16 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
-
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Pricing from "@/components/Pricing";
+import Features from "@/components/Features";
+import Stats from "@/components/Stats";
+import About from "@/components/About";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import { MadeWithDyad } from "@/components/made-with-dyad";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">
-          Start building your amazing project here!
-        </p>
-      </div>
+    <div className="min-h-screen bg-[#0F172A] text-[#F8FAFC]">
+      <Navbar />
+      <main>
+        <Hero />
+        <Stats />
+        <Pricing />
+        <Features />
+        <About />
+        <Testimonials />
+        <FAQ />
+        <Contact />
+      </main>
+      <Footer />
       <MadeWithDyad />
     </div>
   );
